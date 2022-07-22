@@ -47,7 +47,7 @@ function checkPattern(colorIndex) {
     if (colorIndex == gamePatternCopy[0]) {
         gamePatternCopy.shift();
     } else {
-        $("h1").text("Game Over! Press Any Button to Continue");
+        $("h1").text("Game Over! Press Any Key to Restart");
         toggleEventHandler();
         $(document).on("keypress", startGame);
     }
